@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img_menu/logo_burger.png">
+    <title>DELIVERY ONLINE</title>
+    <link rel="stylesheet" href="css-compra/CSScompra.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+    src="https://kit.fontawesome.com/7e5b2d153f.js"
+    crossorigin="anonymous"
+  ></script>
+    <script defer type="text/javascript" src="js/carrito.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#"><img src="../img_menu/logo_burger.png" alt=""></a>
+        <button type="button" class="icon_nav" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+        <ul class="nav_menu">
+          <li class="nav_menu_item"> <a href="../nosotros/index_nosotros.html" class="nav_menu_link">Nosotros</a></li>
+          <li class="nav_menu_item"> <a href="../indexMenu.html" class="nav_menu_link">Promociones</a></li>
+          <li class="nav_menu_item"> <a href="../carta/index_carta.html" class="nav_menu_link_carta">Nuestra carta</a></li>
+          <li class="nav_menu_item"> <a href="../contacto.html" class="nav_menu_link">Contactenos</a></li>
+          <li class="nav_menu_item"> <a href="../login.html" class="nav_menu_link">Intranet</a></li>
+          <li class="nav_menu_item"> <a href="#" class="nav_menu_link_carrito">Carrito</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="conteiner">
+      <div class="cuerpo">
+        <img src="../carta/img/hamburguesas/clasica.png" alt="" class="img_producto">
+         <div class="descripcion">
+           <form class="formulario">
+              <h1> Hamburguesa clasica</h1>
+               <h1>A solo S/.<span id="precio">11</span> </h1>
+              <div class="textotabla">
+                <p>Deliciosa hamburguesa a la parrilla. ¡La más Clásica de Grill Burger! </p>
+                <br>
+                <label>Elige el tamaño de tu porcion:</label> <br>
+                <input type="radio" name="ec" value=""> &nbsp;<label>Regular</label><br>
+                <input type="radio" name="ec" value=""> &nbsp;<label>Mediana </label> <br>
+                <input type="radio" name="ec" value=""> &nbsp;<label>Grande</label> <br><br>
+                <label>Elige que salsas deseas:</label> <br>
+                <input type="checkbox" name="" value=""> &nbsp;<label>Mayonesa </label> <br>
+                <input type="checkbox" name="" value=""> &nbsp;<label>Ketchup</label><br>
+                <input type="checkbox" name="" value=""> &nbsp;<label>Mostaza </label> <br>
+                <input type="checkbox" name="" value=""> &nbsp;<label>Crema GRILLBURGER</label> <br><br>
+                <p>Cantidad: &nbsp; <input type="number" name="Cantidad del producto" id="cant" onchange="mostrarTotal()"> </p><br>
+                <p id="total"></p>
+                <button type="button" name="button" class="boton" onclick="mostrarConfirm()">Agregar</button>
+              </div>
+            </form>
+         </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-logo">
+       <img src="../img_menu/logo_burger.png" alt="" style="width:300px; height:250px;">
+      </div>
+      <div class="footer_conocenos">
+         <h1>Conocenos</h1>
+         <ul class="redes_footer">
+             <li class="footer_link"><a href="#">Zona de delivery</a> </li>
+             <li class="footer_link"><a href="#">Locales</a> </li>
+             <li class="footer_link"><a href="#">GRILLBURGER1231@gmail.com</a> </li>
+             <li class="footer_link"><a href="#"> +51  960 229 669</a></li>
+         </ul>
+      </div>
+      <div class="footer-redes">
+           <h1>Redes sociales</h1>
+           <ul class="redes_footer">
+             <li class="footer_link"><img src="../img_menu/footer_facebook.png" alt="" style="width:30px; height:30px;"> <a href="#">Facebook </a></li>
+             <li class="footer_link"><img src="../img_menu/footer_instagram.png" alt="" style="width:30px; height:30px;"><a href="#">Instagram </a></li>
+             <li class="footer_link"><img src="../img_menu/footer_youtube.png" alt="" style="width:30px; height:25px;"><a href="#">Youtube </a></li>
+             <li class="footer_link"><img src="../img_menu/footer_twitter.png" alt="" style="width:30px; height:30px;"><a href="#">Twitter</a></li>
+           </ul>
+      </div>
+      <div class="footer-promociones">
+         <h1>¿Quieres recibir promociones <br> y noticias?</h1>
+         <input type="text" class="correo_footer" id="insert_correo_footer" placeholder="Tu correo"> <button type="button" name="button" class="button_correo">Enviar</button>
+      </div>
+   </footer>
+  </body>
+</html>

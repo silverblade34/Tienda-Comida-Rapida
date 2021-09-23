@@ -1,0 +1,283 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Odibee Sans', cursive;
+  font-size: 22px;
+   background-color: #171716;
+}
+/* IDEA:...............................MENU NAVEGACION................................... */
+.header{
+  background-color: #171716;
+  border-bottom:4px solid #f2b648;
+  height: 80px;
+  position: fixed;z-index: 3;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header img{
+  height: 70px;
+  width: 110px;
+}
+.nav{
+   display: flex;
+   justify-content: space-between;
+}
+.nav_menu_link{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.nav_menu_link_carta{
+  color:#F44336;
+  text-decoration: none;
+}
+.nav_menu_link_carta:hover{
+  transform: scale(1.1);
+}
+.nav_menu_link_carrito{
+  color:  rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #F44336;
+  border: 2px solid rgb(255, 255, 255);
+}
+.nav_menu_link_carrito:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(196, 54, 29);
+}
+.nav_menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav_menu_item{
+  margin: 0 20px;
+  text-transform:uppercase;
+  line-height: 80px;
+  width: max-content;/* Si tienes 2 palabras no lo va a mandar para abajo si se acorta el width */
+}
+
+.nav_menu_link:hover{
+  background-color: rgb(99, 98, 96);
+  transition: 0.5s;
+}
+.icon_nav{
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+
+  display: none;
+}
+
+/* ......................................cuerpo ..............................*/
+.conteiner{
+  padding-top: 70px;
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuerpo{
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.25s;
+  background-color:#292828;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.descripcion{
+  padding-left: 20px;
+  width: 400px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+.descripcion p{
+  padding-right: 20px;
+}
+.descripcion h1{
+  text-align: center;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 37px;
+  color: #f2b648;
+  margin-top: 15px;
+}
+.descripcion label{
+  margin-top: 10px;
+}
+.cuerpo img{
+  width: 400px;
+  min-height: 450px;
+}
+.boton{
+  width: 200px;
+  padding: 6px;
+  background-color:#292828;
+  color: rgb(255, 255, 255);
+  border-radius:6px;
+  border: 2px solid #F44336;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 24%;
+  margin-top:15px;
+  margin-bottom: 15px;
+  text-transform:uppercase;
+
+}
+.boton:hover{
+  background-color: #F44336;
+}
+/* -------------------------------------------------FOOTER--------------------------------------- */
+.footer{
+  display: flex;
+  border-top:4px solid #f2b648;
+  flex-wrap: wrap;
+  background-color: #171716;
+  color:  rgb(255, 255, 255);
+}
+.footer h1{
+  color: #F44336;
+  font-size: 26px;
+  text-transform:uppercase;
+  font-weight:lighter;
+}
+.footer-logo{
+  left: 0;
+
+}
+.footer-redes, .footer_conocenos{
+  margin-left: 80px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.redes_footer{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+.footer a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+}
+.footer_link{
+  margin-top: 10px;
+}
+
+.footer-promociones{
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.correo_footer{
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+.button_correo{
+  padding: 10px;
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+  background-color: #F44336;
+  color: rgb(255, 255, 255);
+  font-weight:bold;
+  box-shadow: none;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+}
+/*.......................................RESPONSIVE................................... */
+@media(max-width:870px){
+  
+  .header{
+    height: 60px;
+  }
+  .nav img{
+    height: 50px;
+    width: 95px;
+  }
+  .nav_menu{
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: center;
+    background-color: #646464;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav_menu_item{
+    line-height: 70px;
+  }
+  .nav_menu_link:hover{
+    background: none;
+    color: #171716;
+  }
+  .nav_menu_link_carrito{
+    border:none;
+    background: none;
+  }
+  .nav_menu_link_carrito:hover{
+    color: #171716;
+    background: none;
+  }
+  .icon_nav{
+    display: block;
+  }
+  .nav_menu-visible{
+    left: 0 ;
+  }
+
+  .conteiner{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    min-height: 750px;
+    overflow: hidden;
+    justify-content: none;
+    align-items: none;
+  }
+  .textotabla{
+    width: 100%;
+  }
+  .descripcion{
+    width: 100%;
+  }
+  .formulario{
+    width: 100%;
+  }
+  .cuerpo{
+    display: inline-block;
+    width: 100%;
+  }
+  .cuerpo img{
+    max-height: 400px;
+    min-height: 150px;
+    height: 300px;
+    width: 100%;
+  }
+  .boton{
+    margin-bottom: 15px;
+    
+  }
+  .footer-promociones{
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+
+}

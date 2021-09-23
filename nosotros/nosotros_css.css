@@ -1,0 +1,284 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Odibee Sans', cursive;
+  font-size: 22px;
+   background-color: #171716;
+}
+/* IDEA:...............................MENU NAVEGACION................................... */
+.header{
+  background-color: #171716;
+  border-bottom:4px solid #f2b648;
+  height: 80px;
+  position: fixed;z-index: 3;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header img{
+  height: 70px;
+  width: 110px;
+}
+.nav{
+   display: flex;
+   justify-content: space-between;
+}
+.nav_menu_link{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.nav_menu_link_nosotros{
+  color:#F44336;
+  text-decoration: none;
+}
+.nav_menu_link_carta:hover{
+  transform: scale(1.1);
+}
+.nav_menu_link_carrito{
+  color:  rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #F44336;
+  border: 2px solid rgb(255, 255, 255);
+}
+.nav_menu_link_carrito:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(196, 54, 29);
+}
+.nav_menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav_menu_item{
+  margin: 0 20px;
+  text-transform:uppercase;
+  line-height: 80px;
+  width: max-content;/* Si tienes 2 palabras no lo va a mandar para abajo si se acorta el width */
+}
+
+.nav_menu_link:hover{
+  background-color: rgb(99, 98, 96);
+  transition: 0.5s;
+}
+.icon_nav{
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+
+  display: none;
+}
+
+  /* ------------------------------------------CONTENEDOR HISTORIA-------------------------------- */
+.conteiner_img_fundadores{
+   padding-top: 60px;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   height: 600px;
+   border-bottom: 4px solid #f2b648;
+}
+.tittle{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+.historia{
+  display: flex;
+}
+.img_carrito_hamburguesero{
+  height: 350px;
+}
+.historia div{
+  margin-left: 30px;
+  font-size: 18px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: rgb(255, 255, 255);
+}
+.img_src_carrito{
+   height: 200px;
+   margin-top: 20%;
+}
+.text_historia{
+  margin-right: 20px;
+}
+
+/* ------------------------------------------CONTENEDOR LOCALES-------------------------------- */
+
+.tarjetas_locales{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.locales{
+  margin: 50px;
+  margin-top: 30px;
+  width: 330px;
+  height: 400px;
+  text-align: center;
+  color: rgb(136, 135, 142);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color:#1D1D1D;
+}
+.locales:hover{
+  transform: scale(1.05);
+
+}
+.locales h1{
+  color: #F44336;
+  font-size: 26px;
+  margin-top: 15px;
+  text-transform:uppercase;
+  font-weight:lighter;
+}
+/* -------------------------------------------------FOOTER--------------------------------------- */
+.footer{
+  display: flex;
+  border-top:4px solid #f2b648;
+  flex-wrap: wrap;
+  background-color: #171716;
+  color:  rgb(255, 255, 255);
+}
+.footer h1{
+  color: #F44336;
+  font-size: 26px;
+  text-transform:uppercase;
+  font-weight:lighter;
+}
+.footer-logo{
+  left: 0;
+
+}
+.footer-redes, .footer_conocenos{
+  margin-left: 80px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.redes_footer{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+.footer a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+}
+.footer_link{
+  margin-top: 10px;
+}
+
+.footer-promociones{
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.correo_footer{
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+.button_correo{
+  padding: 10px;
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+  background-color: #F44336;
+  color: rgb(255, 255, 255);
+  font-weight:bold;
+  box-shadow: none;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* IDEA: .......................................RESPONSIVE................................... */
+@media(max-width:870px){
+
+  .header{
+    height: 60px;
+  }
+  .nav img{
+    height: 50px;
+    width: 95px;
+  }
+  .nav_menu{
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: center;
+    background-color: #646464;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav_menu_item{
+    line-height: 70px;
+  }
+  .nav_menu_link:hover{
+    background: none;
+    color: #171716;
+  }
+  .nav_menu_link_carta{
+    color: rgb(255, 255, 255);
+  }
+  .nav_menu_link_carta:hover{
+    color: #171716;
+    background: none;
+  }
+  .nav_menu_link_carrito{
+    border:none;
+    background: none;
+  }
+  .nav_menu_link_carrito:hover{
+    color: #171716;
+    background: none;
+  }
+  .icon_nav{
+    display: block;
+  }
+  .nav_menu-visible{
+    left: 0 ;
+  }
+  .historia{
+    display:block;
+  }
+  .img_src_carrito{
+    margin:0 auto;
+  }
+  .img_carrito_hamburguesero{
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteiner_img_fundadores{
+    height: 400px;
+  }
+  .historia div{
+    margin-left: 0;
+  }
+  .text_historia{
+    margin-left: 0;
+    width: 100%;
+    padding:20px;
+  }
+  .footer-promociones{
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+}

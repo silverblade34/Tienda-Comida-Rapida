@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Odibee Sans', cursive;
+  font-size: 22px;
+   background-color: #171716;
+}
+/*---------------------------------------------------- NAVEGACION------------------------------------ */
+.header{
+  background-color: #171716;
+  border-bottom:4px solid #f2b648;
+  height: 80px;
+  position: fixed;z-index: 3;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header img{
+  height: 70px;
+  width: 110px;
+}
+.nav_menu_link_promociones{
+  color:#F44336;
+  text-decoration: none;
+}
+.nav{
+   display: flex;
+   justify-content: space-between;
+}
+.nav_menu_link{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav_menu_link_carta:hover{
+  transform: scale(1.1);
+}
+.nav_menu_link_carrito{
+  color:  rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #F44336;
+  border: 2px solid rgb(255, 255, 255);
+}
+.nav_menu_link_carrito:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(196, 54, 29);
+}
+.nav_menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav_menu_item{
+  margin: 0 20px;
+  text-transform:uppercase;
+  line-height: 80px;
+  width: max-content;/* Si tienes 2 palabras no lo va a mandar para abajo si se acorta el width */
+}
+
+.nav_menu_link:hover{
+  background-color: rgb(99, 98, 96);
+  transition: 0.5s;
+}
+.icon_nav{
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+
+  display: none;
+}
+
+ /* -----------------------------------------SLIDER DE IMAGENES----------------------- */
+.conteiner-slider{
+   width: 100%;
+   overflow: hidden;
+   margin: 0 auto;
+ }
+.slider-img{
+   display: block;
+   width: 100%;
+   height: 100%;
+ }
+.slider{
+  display: flex;
+  width: 400%;
+  height: 600px;
+}
+.slider-section{
+  width: 100%;
+}
+.slider-btn-right{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  background-color: #F44336;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  right:10px;
+}
+.slider-btn-right:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+.slider-btn-left{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  background-color: #F44336;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  left: 10px;
+}
+.slider-btn-left:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+ /* -----------------------------------------CARTAS PROMOCIONES----------------------- */
+
+ .conteiner-promociones{
+   border-top:4px solid #f2b648;
+   background-color:#171716;
+   width: 100%;
+   padding-bottom: 30px;
+ }
+ .promociones-title{
+   text-align: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   color: rgb(255, 255, 255);
+   width: 100%;
+ }
+.tarjetas-promociones{
+  margin-top: 30px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.tarjetas-promociones .element{
+  width: 300px;
+  height: 400px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 20px;
+  text-align:center;
+  font-family: 'Noto Sans JP', sans-serif;
+  transition: all 0.25s;
+  background-color:#1D1D1D;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.tarjetas-promociones .element:hover{
+  transform: scale(1.03);
+}
+.tarjetas-promociones img{
+  width: 100%;
+  height: 40%;
+}
+.tarjetas-promociones a{
+  text-decoration: none;
+}
+.element h1{
+  font-size: 20px;
+  color: rgb(136, 135, 142);
+}
+.element p{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.element button{
+  width: 200px;
+  padding: 6px;
+  background-color:#1D1D1D;
+  color: rgb(255, 255, 255);
+  border-radius:6px;
+  border: 2px solid #F44336;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top:10px;
+  text-transform:uppercase;
+}
+.element button:hover{
+  background-color: #F44336;
+}
+/* -------------------------------------------------FOOTER--------------------------------------- */
+.footer{
+  display: flex;
+  border-top:4px solid #f2b648;
+  flex-wrap: wrap;
+  background-color: #171716;
+  color:  rgb(255, 255, 255);
+}
+.footer h1{
+  color: #F44336;
+  font-size: 26px;
+  text-transform:uppercase;
+  font-weight:lighter;
+}
+.footer-logo{
+  left: 0;
+
+}
+.footer-redes, .footer_conocenos{
+  margin-left: 80px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.redes_footer{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+.footer a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+}
+.footer_link{
+  margin-top: 10px;
+}
+
+.footer-promociones{
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.correo_footer{
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+.button_correo{
+  padding: 10px;
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+  background-color: #F44336;
+  color: rgb(255, 255, 255);
+  font-weight:bold;
+  box-shadow: none;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+}
+/*--------------------------------------- APLICACION RESPONSIVE  ---------------------------*/
+
+@media(max-width:825px){
+
+  .header{
+    height: 60px;
+  }
+  .nav img{
+    height: 50px;
+    width: 95px;
+  }
+  .nav_menu{
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: center;
+    background-color: #646464;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav_menu_item{
+    line-height: 70px;
+  }
+  .nav_menu_link:hover{
+    background: none;
+    color: #171716;
+  }
+  .nav_menu_link_carta{
+    color: rgb(255, 255, 255);
+  }
+  .nav_menu_link_carta:hover{
+    color: #171716;
+    background: none;
+  }
+  .nav_menu_link_carrito{
+    border:none;
+    background: none;
+  }
+  .nav_menu_link_carrito:hover{
+    color: #171716;
+    background: none;
+  }
+  .icon_nav{
+    display: block;
+  }
+  .nav_menu-visible{
+    left: 0 ;
+  }
+  .slider{
+    height: 400px;
+  }
+  .slider-btn-right, .slider-btn-left{
+      margin-top:-30%;
+  }
+  .tarjetas-promociones .element{
+    margin:10px;
+  }
+  .footer-promociones{
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+}
